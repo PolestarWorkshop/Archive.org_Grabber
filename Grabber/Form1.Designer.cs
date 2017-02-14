@@ -99,7 +99,7 @@
             this.logs.FormattingEnabled = true;
             this.logs.Location = new System.Drawing.Point(556, 293);
             this.logs.Name = "logs";
-            this.logs.Size = new System.Drawing.Size(642, 173);
+            this.logs.Size = new System.Drawing.Size(374, 173);
             this.logs.TabIndex = 6;
             // 
             // getCollection
@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1263, 574);
+            this.ClientSize = new System.Drawing.Size(952, 574);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.searchQuery);
