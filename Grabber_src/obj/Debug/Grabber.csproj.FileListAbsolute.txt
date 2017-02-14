@@ -31,3 +31,4 @@ C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Grabber.exe
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Grabber.pdb
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_bin\Grabber.exe.config
