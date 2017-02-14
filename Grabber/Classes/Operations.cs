@@ -27,6 +27,8 @@ namespace Classes
     public static class Network
     {
        public static WebClient wb = new WebClient();
+       public static ProgressBar pb;
+       public static Label bytesReceived;
 
        public static async Task<string> downloadStringUrl(string url)
        {
@@ -53,11 +55,11 @@ namespace Classes
            wb.QueryString.Add("fileName", filename);
 
 
-         //  client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(DownloadProgress);
+           wb.DownloadProgressChanged += new DownloadProgressChangedEventHandler(DownloadProgress);
            UIOperations.Log(String.Format("Download started: {0}", filename));
            try
            {
-              wb.DownloadFileAsync(Uri, System.Environment.CurrentDirectory + "/Data/" + filename);
+              wb.DownloadFileAsync(Uri, System.Environment.CurrentDirectory + "/Downloaded/" + filename);
               while (wb.IsBusy) { Application.DoEvents(); } 
            }
 
@@ -66,6 +68,14 @@ namespace Classes
                UIOperations.Log(ex.Message);
            }
        }
+
+private static void DownloadProgress(object sender, DownloadProgressChangedEventArgs e)
+{
+    bytesReceived.Text = e.BytesReceived.ToString() + " / " + e.TotalBytesToReceive.ToString() + " bytes";
+    
+    pb.Value = e.ProgressPercentage;
+}
+
 
        private static void Completed(object sender, AsyncCompletedEventArgs e)
        {

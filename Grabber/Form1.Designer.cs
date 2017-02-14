@@ -42,11 +42,12 @@
             this.infoBox = new System.Windows.Forms.RichTextBox();
             this.startDownload = new System.Windows.Forms.Button();
             this.stopDownload = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.currentPosition = new System.Windows.Forms.Label();
             this.searchQuery = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bytesReceived = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultBox
@@ -184,12 +185,12 @@
             this.stopDownload.Text = "Stop Download";
             this.stopDownload.UseVisualStyleBackColor = true;
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(618, 484);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(310, 23);
-            this.progressBar1.TabIndex = 17;
+            this.progressBar.Location = new System.Drawing.Point(618, 484);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(310, 23);
+            this.progressBar.TabIndex = 17;
             // 
             // currentPosition
             // 
@@ -225,16 +226,26 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "*Double click opens Url";
             // 
+            // bytesReceived
+            // 
+            this.bytesReceived.AutoSize = true;
+            this.bytesReceived.Location = new System.Drawing.Point(624, 510);
+            this.bytesReceived.Name = "bytesReceived";
+            this.bytesReceived.Size = new System.Drawing.Size(58, 13);
+            this.bytesReceived.TabIndex = 22;
+            this.bytesReceived.Text = "0 / 0 bytes";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 574);
+            this.Controls.Add(this.bytesReceived);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.searchQuery);
             this.Controls.Add(this.currentPosition);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.stopDownload);
             this.Controls.Add(this.startDownload);
             this.Controls.Add(this.infoBox);
@@ -274,11 +285,12 @@
         private System.Windows.Forms.RichTextBox infoBox;
         private System.Windows.Forms.Button startDownload;
         private System.Windows.Forms.Button stopDownload;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label currentPosition;
         private System.Windows.Forms.TextBox searchQuery;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label bytesReceived;
     }
 }
 

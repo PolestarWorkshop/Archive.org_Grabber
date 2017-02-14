@@ -98,6 +98,8 @@ namespace Grabber
             UIOperations.logger = this.logs;
             Query.queryBox = this.query;
             UIOperations.Log(this.Text + " Started");
+            Network.pb = this.progressBar;
+            Network.bytesReceived = this.bytesReceived;
 
             foreach (string line in File.ReadAllLines("Data/collections.txt"))
             {
@@ -191,7 +193,7 @@ namespace Grabber
         startDownload.Enabled = false;
         stopDownload.Enabled = true;
 
-        Query.currentFile = 0;
+        Query.currentFile = 1;
 
         List<int> IdstoDownload = new List<int>();
 
@@ -208,13 +210,18 @@ namespace Grabber
 
         Query.totalFiles = totalFiles;
 
-     
+
         foreach (int id in IdstoDownload)
         {
+            currentPosition.Text = Query.currentFile + " / " + Query.totalFiles;
+
             DownloadFile("https://archive.org/compress/" + _JSONResult.response.docs[id].identifier, _JSONResult.response.docs[id].identifier + ".zip");
             Query.currentFile++;
-            currentPosition.Text = Query.currentFile + " / " + Query.totalFiles;
+            
         }
+
+        startDownload.Enabled = true;
+        stopDownload.Enabled = false;
 
 
         

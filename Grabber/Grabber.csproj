@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\NewFolder1\" />
+    <Folder Include="Downloaded\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\collections.txt" />
