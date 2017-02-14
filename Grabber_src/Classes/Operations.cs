@@ -59,7 +59,7 @@ namespace Classes
            UIOperations.Log(String.Format("Download started: {0}", filename));
            try
            {
-              wb.DownloadFileAsync(Uri, System.Environment.CurrentDirectory + "/Downloaded/" + filename);
+              wb.DownloadFileAsync(Uri, System.Environment.CurrentDirectory + "/Downloads/" + filename);
               while (wb.IsBusy) { Application.DoEvents(); } 
            }
 
