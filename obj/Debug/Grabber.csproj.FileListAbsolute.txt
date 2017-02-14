@@ -1,0 +1,11 @@
+c:\users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\bin\Debug\Grabber.exe.config
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\bin\Debug\Grabber.exe
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\bin\Debug\Grabber.pdb
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.csprojResolveAssemblyReference.cache
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.Form1.resources
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.Properties.Resources.resources
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.csproj.GenerateResource.Cache
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.exe
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\obj\Debug\Grabber.pdb
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maxsamsonov\documents\visual studio 2013\Projects\Grabber\Grabber\bin\Debug\Newtonsoft.Json.xml
