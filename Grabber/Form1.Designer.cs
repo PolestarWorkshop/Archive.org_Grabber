@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 574);
+            this.ClientSize = new System.Drawing.Size(945, 574);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.searchQuery);
@@ -250,6 +250,7 @@
             this.Controls.Add(this.collections);
             this.Controls.Add(this.resultBox);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Archive.org Grabber";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
