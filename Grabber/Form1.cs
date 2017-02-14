@@ -108,6 +108,8 @@ namespace Grabber
 
             mediaType.SelectedIndex = 0;
 
+            this.Text = "Archive.Org Grabber v." + Grabber.Default.version.ToString();
+
         }
 
         private void getCollection_Click(object sender, EventArgs e)
@@ -232,6 +234,12 @@ namespace Grabber
         int index = resultBox.SelectedIndex;
 
         Process.Start("https://archive.org/details/" + _JSONResult.response.docs[index].identifier);
+    }
+
+    private void linkLabel1_Click(object sender, EventArgs e)
+    {
+       
+        Process.Start("https://github.com/PolestarWorkshop");
     }
 
     }

@@ -48,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bytesReceived = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // resultBox
@@ -235,11 +236,23 @@
             this.bytesReceived.TabIndex = 22;
             this.bytesReceived.Text = "0 / 0 bytes";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(834, 540);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(94, 13);
+            this.linkLabel1.TabIndex = 23;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "PolestarWorkshop";
+            this.linkLabel1.Click += new System.EventHandler(this.linkLabel1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 574);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bytesReceived);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -260,6 +273,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.collections);
             this.Controls.Add(this.resultBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Archive.org Grabber";
@@ -291,6 +305,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label bytesReceived;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
