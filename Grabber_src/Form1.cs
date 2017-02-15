@@ -73,21 +73,6 @@ namespace Grabber
 
         }
 
-        private string _query;
-        public string apiQuery
-        {
-            get
-            {
-                return _query;
-            }
-
-            set
-            {
-               _query = value;
-               query.Text = _query;
-            }
-        }
-
         public Form1()
         {
             InitializeComponent();
@@ -96,6 +81,7 @@ namespace Grabber
         private void Form1_Load(object sender, EventArgs e)
         {
             UIOperations.logger = this.logs;
+            UIOperations.resultCheckBox = this.resultBox;
             Query.queryBox = this.query;
             UIOperations.Log(this.Text + " Started");
             Network.pb = this.progressBar;
@@ -143,6 +129,7 @@ namespace Grabber
         private void startProcesss_Click(object sender, EventArgs e)
         {
             getResult();
+            
         }
 
         private async void getResult()
@@ -185,14 +172,15 @@ namespace Grabber
 
         }
 
-    private void DownloadFile(string url, string filename)
+    private void DownloadFile(string url, string filename, int Id)
 {
-    Network.DownloadFile(url, filename);
+    Network.DownloadFile(url, filename, Id);
 }
 
     private void startDownload_Click(object sender, EventArgs e)
     {
         startDownload.Enabled = false;
+        resultBox.Enabled = false;
         stopDownload.Enabled = true;
 
         Query.currentFile = 1;
@@ -217,13 +205,14 @@ namespace Grabber
         {
             currentPosition.Text = Query.currentFile + " / " + Query.totalFiles;
 
-            DownloadFile("https://archive.org/compress/" + _JSONResult.response.docs[id].identifier, _JSONResult.response.docs[id].identifier + ".zip");
+            DownloadFile("https://archive.org/compress/" + _JSONResult.response.docs[id].identifier, _JSONResult.response.docs[id].identifier + ".zip", id);
             Query.currentFile++;
             
         }
 
         startDownload.Enabled = true;
         stopDownload.Enabled = false;
+        resultBox.Enabled = true;
 
 
         

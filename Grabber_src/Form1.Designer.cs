@@ -273,7 +273,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.collections);
             this.Controls.Add(this.resultBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Archive.org Grabber";

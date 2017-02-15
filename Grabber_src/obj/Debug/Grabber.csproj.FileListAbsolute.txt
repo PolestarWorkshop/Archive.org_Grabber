@@ -32,3 +32,12 @@ C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Grabber.pdb
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_src\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jasper\Documents\Archive.org_Grabber\Grabber_bin\Grabber.exe.config
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_bin\Grabber.exe.config
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.exe
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.pdb
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_bin\Grabber.exe
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_bin\Grabber.pdb
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.csprojResolveAssemblyReference.cache
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.Form1.resources
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.Properties.Resources.resources
+C:\Users\maxsamsonov\Documents\Visual Studio 2013\Projects\Grabber\Grabber_src\obj\Debug\Grabber.csproj.GenerateResource.Cache

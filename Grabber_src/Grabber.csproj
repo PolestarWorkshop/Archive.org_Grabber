@@ -95,12 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\NewFolder1\" />
-    <Folder Include="Downloaded\" />
+    <Folder Include="Downloads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\collections.txt" />
-    <Content Include="Data\test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
