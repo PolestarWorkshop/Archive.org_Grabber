@@ -68,7 +68,7 @@ namespace Grabber
                 }
 
                 
-                queryBox.Text += String.Format("&output={0}&rows={1}", Grabber.Default.output, numOfRows);
+                queryBox.Text += String.Format("&rows={0}", numOfRows);
             }
 
         }
@@ -136,7 +136,8 @@ namespace Grabber
         {
             startProcesss.Enabled = false;
             resultBox.Items.Clear();
-            string result = await Network.downloadStringUrl(Query.queryBox.Text);
+            string query = Query.queryBox.Text + "&output=json";
+            string result = await Network.downloadStringUrl(query);
 
             try
             {
